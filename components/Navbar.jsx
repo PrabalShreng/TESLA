@@ -8,15 +8,30 @@ const navItems = [
       {
         category: "Cars",
         items: [
-          { name: "Model S", img: "https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto/Mega-Menu-Vehicles-Model-S.png", href: "/Model-S" },
-          { name: "Model 3", img: "https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto/Mega-Menu-Vehicles-Model-3.png", href: "/Model-3" },
-          { name: "Model X", img: "https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto/Mega-Menu-Vehicles-Model-X.png", href: "/Model-X" },
-          { name: "Model Y", img: "https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto/Mega-Menu-Vehicles-Model-Y.png", href: "/Model-Y" },
+          {
+            name: "Model S",
+            img: "https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto/Mega-Menu-Vehicles-Model-S.png",
+            href: "/Model-S",
+          },
+          {
+            name: "Model 3",
+            img: "https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto/Mega-Menu-Vehicles-Model-3.png",
+            href: "/Model-3",
+          },
+          {
+            name: "Model X",
+            img: "https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto/Mega-Menu-Vehicles-Model-X.png",
+            href: "/Model-X",
+          },
+          {
+            name: "Model Y",
+            img: "https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto/Mega-Menu-Vehicles-Model-Y.png",
+            href: "/Model-Y",
+          },
           { name: "Cybertruck", img: "image/truck.avif", href: "/Cybertruck" },
           { name: "Roadster", img: "image/inventory.avif", href: "/Roadster" },
         ],
       },
-      
     ],
   },
   {
@@ -25,15 +40,31 @@ const navItems = [
       {
         category: "Storage",
         items: [
-          { name: "Powerwall", img: "image/powerwall.avif", href: "/Powerwall" },
-          { name: "Megapack", img: "https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto/Mega-Menu-Energy-Megapack.png", href: "/Megapack" },
+          {
+            name: "Powerwall",
+            img: "image/powerwall.avif",
+            href: "/Powerwall",
+          },
+          {
+            name: "Megapack",
+            img: "https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto/Mega-Menu-Energy-Megapack.png",
+            href: "/Megapack",
+          },
         ],
       },
       {
         category: "Solar",
         items: [
-          { name: "Solar Panels", img: "https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto/Mega-Menu-Energy-Solar-Panels.png", href: "/Solar-Panels" },
-          { name: "Solar Roof", img: "https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto/Mega-Menu-Energy-Solar-Roof.png", href: "/Solar-Roof" },
+          {
+            name: "Solar Panels",
+            img: "https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto/Mega-Menu-Energy-Solar-Panels.png",
+            href: "/Solar-Panels",
+          },
+          {
+            name: "Solar Roof",
+            img: "https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto/Mega-Menu-Energy-Solar-Roof.png",
+            href: "/Solar-Roof",
+          },
         ],
       },
     ],
@@ -44,9 +75,21 @@ const navItems = [
       {
         category: "Charging",
         items: [
-          { name: "Supercharger", img: "image/Supercharging.avif", href: "/Supercharger" },
-          { name: "Home Charging", img: "https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto/Mega-Menu-Charging-Home-Charging.png", href: "/Home-Charging" },
-          { name: "Adapters", img: "image/adopter.avif", href: "/Charging-Adapter" },
+          {
+            name: "Supercharger",
+            img: "image/Supercharging.avif",
+            href: "/Supercharger",
+          },
+          {
+            name: "Home Charging",
+            img: "https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto/Mega-Menu-Charging-Home-Charging.png",
+            href: "/Home-Charging",
+          },
+          {
+            name: "Adapters",
+            img: "image/adopter.avif",
+            href: "/Charging-Adapter",
+          },
         ],
       },
     ],
@@ -57,7 +100,11 @@ const navItems = [
       {
         category: "Discover",
         items: [
-          { name: "Test Drive", img: "shop/discover.avif", href: "/Test-Drive" },
+          {
+            name: "Test Drive",
+            img: "shop/discover.avif",
+            href: "/Test-Drive",
+          },
           { name: "Find Us", img: "shop/discover1.avif", href: "/Find-Us" },
           { name: "Events", img: "shop/discover2.avif", href: "/Events" },
           { name: "Support", img: "shop/discover3.avif", href: "/Support" },
@@ -106,7 +153,9 @@ export default function Navbar() {
           left: 0,
           right: 0,
           zIndex: 1000,
-          background: activeMenu ? "rgba(255,255,255,0.98)" : "rgba(255,255,255,0.85)",
+          background: activeMenu
+            ? "rgba(255,255,255,0.98)"
+            : "rgba(255,255,255,0.85)",
           backdropFilter: "blur(20px)",
           WebkitBackdropFilter: "blur(20px)",
           transition: "background 0.2s ease",
@@ -127,13 +176,16 @@ export default function Navbar() {
         >
           {/* Logo */}
           {/* Logo */}
-<a href="/" style={{ display: "flex", alignItems: "center", flexShrink: 0 }}>
-  <img
-    src="/image/tesla1.jpg"
-    alt="Tesla"
-    style={{ height: "44px", objectFit: "contain" }}
-  />
-</a>
+          <a
+            href="/"
+            style={{ display: "flex", alignItems: "center", flexShrink: 0 }}
+          >
+            <img
+              src="/image/tesla1.jpg"
+              alt="Tesla"
+              style={{ height: "44px", objectFit: "contain" }}
+            />
+          </a>
 
           {/* Desktop Nav Links */}
           <div
@@ -150,7 +202,9 @@ export default function Navbar() {
             {navItems.map((item) => (
               <div
                 key={item.label}
-                onMouseEnter={() => item.dropdown && handleMouseEnter(item.label)}
+                onMouseEnter={() =>
+                  item.dropdown && handleMouseEnter(item.label)
+                }
                 onMouseLeave={handleMouseLeave}
                 style={{ position: "relative" }}
               >
@@ -165,7 +219,10 @@ export default function Navbar() {
                     color: "#171a20",
                     textDecoration: "none",
                     borderRadius: "20px",
-                    background: activeMenu === item.label ? "rgba(0,0,0,0.07)" : "transparent",
+                    background:
+                      activeMenu === item.label
+                        ? "rgba(0,0,0,0.07)"
+                        : "transparent",
                     transition: "background 0.15s",
                     whiteSpace: "nowrap",
                     letterSpacing: "-0.01em",
@@ -188,23 +245,32 @@ export default function Navbar() {
           </div>
 
           {/* Right Icons */}
-          <div style={{ display: "flex", alignItems: "center", gap: "4px" }} className="desktop-nav">
-            <button
-              style={iconBtnStyle}
-              title="Search"
-              aria-label="Search"
-            >
-              <svg width="18" height="18" fill="none" stroke="currentColor" strokeWidth="1.8" viewBox="0 0 24 24">
+          <div
+            style={{ display: "flex", alignItems: "center", gap: "4px" }}
+            className="desktop-nav"
+          >
+            <button style={iconBtnStyle} title="Search" aria-label="Search">
+              <svg
+                width="18"
+                height="18"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="1.8"
+                viewBox="0 0 24 24"
+              >
                 <circle cx="11" cy="11" r="8" />
                 <path d="m21 21-4.35-4.35" />
               </svg>
             </button>
-            <button
-              style={iconBtnStyle}
-              title="Account"
-              aria-label="Account"
-            >
-              <svg width="18" height="18" fill="none" stroke="currentColor" strokeWidth="1.8" viewBox="0 0 24 24">
+            <button style={iconBtnStyle} title="Account" aria-label="Account">
+              <svg
+                width="18"
+                height="18"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="1.8"
+                viewBox="0 0 24 24"
+              >
                 <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2" />
                 <circle cx="12" cy="7" r="4" />
               </svg>
@@ -234,7 +300,14 @@ export default function Navbar() {
               className="mobile-menu-btn"
               aria-label="Menu"
             >
-              <svg width="20" height="20" fill="none" stroke="currentColor" strokeWidth="1.8" viewBox="0 0 24 24">
+              <svg
+                width="20"
+                height="20"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="1.8"
+                viewBox="0 0 24 24"
+              >
                 <line x1="3" y1="6" x2="21" y2="6" />
                 <line x1="3" y1="12" x2="21" y2="12" />
                 <line x1="3" y1="18" x2="21" y2="18" />
@@ -261,7 +334,10 @@ export default function Navbar() {
                 boxShadow: "0 8px 32px rgba(0,0,0,0.12)",
                 opacity: activeMenu === item.label ? 1 : 0,
                 pointerEvents: activeMenu === item.label ? "all" : "none",
-                transform: activeMenu === item.label ? "translateY(0)" : "translateY(-8px)",
+                transform:
+                  activeMenu === item.label
+                    ? "translateY(0)"
+                    : "translateY(-8px)",
                 transition: "opacity 0.2s ease, transform 0.2s ease",
                 padding: "32px 0 40px",
               }}
@@ -300,7 +376,7 @@ export default function Navbar() {
                       >
                         {i === 0 ? group.category : ""}
                       </div>
-                    ))
+                    )),
                   )}
                 </div>
 
@@ -329,8 +405,13 @@ export default function Navbar() {
                           cursor: "pointer",
                           minWidth: 0,
                         }}
-                        onMouseEnter={(e) => (e.currentTarget.style.background = "rgba(0,0,0,0.04)")}
-                        onMouseLeave={(e) => (e.currentTarget.style.background = "transparent")}
+                        onMouseEnter={(e) =>
+                          (e.currentTarget.style.background =
+                            "rgba(0,0,0,0.04)")
+                        }
+                        onMouseLeave={(e) =>
+                          (e.currentTarget.style.background = "transparent")
+                        }
                       >
                         {/* eslint-disable-next-line @next/next/no-img-element */}
                         <img
@@ -360,7 +441,14 @@ export default function Navbar() {
                         >
                           {product.name}
                         </span>
-                        <div style={{ display: "flex", gap: "8px", flexWrap: "wrap", justifyContent: "center" }}>
+                        <div
+                          style={{
+                            display: "flex",
+                            gap: "8px",
+                            flexWrap: "wrap",
+                            justifyContent: "center",
+                          }}
+                        >
                           <a
                             href={product.href}
                             style={{
@@ -385,12 +473,12 @@ export default function Navbar() {
                           </a>
                         </div>
                       </div>
-                    ))
+                    )),
                   )}
                 </div>
               </div>
             </div>
-          ) : null
+          ) : null,
         )}
 
         {/* ── Mobile Menu ── */}
@@ -407,7 +495,9 @@ export default function Navbar() {
             <div key={item.label + "-mobile"}>
               <button
                 onClick={() =>
-                  setMobileExpanded(mobileExpanded === item.label ? null : item.label)
+                  setMobileExpanded(
+                    mobileExpanded === item.label ? null : item.label,
+                  )
                 }
                 style={{
                   width: "100%",
@@ -421,6 +511,7 @@ export default function Navbar() {
                   background: "transparent",
                   border: "none",
                   cursor: "pointer",
+
                   textAlign: "left",
                 }}
               >
@@ -434,7 +525,10 @@ export default function Navbar() {
                     strokeWidth="2"
                     viewBox="0 0 24 24"
                     style={{
-                      transform: mobileExpanded === item.label ? "rotate(180deg)" : "none",
+                      transform:
+                        mobileExpanded === item.label
+                          ? "rotate(180deg)"
+                          : "none",
                       transition: "transform 0.2s",
                     }}
                   >
@@ -460,7 +554,7 @@ export default function Navbar() {
                       >
                         {p.name}
                       </a>
-                    ))
+                    )),
                   )}
                 </div>
               )}

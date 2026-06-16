@@ -132,7 +132,7 @@ export default function Footer() {
             Tesla © 2026 — Inspired by Tesla, Inc. All rights reserved.
           </p>
           <br />
-          <h4>PRABAL SHRENGCHANG BANG LIMBU</h4>
+          <h4>PRABAL SHRENG CHANGBANG LIMBU</h4>
         </div>
       </div>
     </footer>
