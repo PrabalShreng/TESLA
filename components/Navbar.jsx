@@ -8,12 +8,12 @@ const navItems = [
       {
         category: "Cars",
         items: [
-          { name: "Model S", img: "https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto/Mega-Menu-Vehicles-Model-S.png", href: "Model-S" },
-          { name: "Model 3", img: "https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto/Mega-Menu-Vehicles-Model-3.png", href: "Model-3" },
-          { name: "Model X", img: "https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto/Mega-Menu-Vehicles-Model-X.png", href: "Model-X" },
-          { name: "Model Y", img: "https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto/Mega-Menu-Vehicles-Model-Y.png", href: "Model-Y" },
-          { name: "Cybertruck", img: "image/truck.avif", href: "Cybertruck" },
-          { name: "Roadster", img: "image/inventory.avif", href: "Roadster" },
+          { name: "Model S", img: "https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto/Mega-Menu-Vehicles-Model-S.png", href: "/Model-S" },
+          { name: "Model 3", img: "https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto/Mega-Menu-Vehicles-Model-3.png", href: "/Model-3" },
+          { name: "Model X", img: "https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto/Mega-Menu-Vehicles-Model-X.png", href: "/Model-X" },
+          { name: "Model Y", img: "https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto/Mega-Menu-Vehicles-Model-Y.png", href: "/Model-Y" },
+          { name: "Cybertruck", img: "image/truck.avif", href: "/Cybertruck" },
+          { name: "Roadster", img: "image/inventory.avif", href: "/Roadster" },
         ],
       },
       
@@ -25,15 +25,15 @@ const navItems = [
       {
         category: "Storage",
         items: [
-          { name: "Powerwall", img: "image/powerwall.avif", href: "Powerwall" },
-          { name: "Megapack", img: "https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto/Mega-Menu-Energy-Megapack.png", href: "Megapack" },
+          { name: "Powerwall", img: "image/powerwall.avif", href: "/Powerwall" },
+          { name: "Megapack", img: "https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto/Mega-Menu-Energy-Megapack.png", href: "/Megapack" },
         ],
       },
       {
         category: "Solar",
         items: [
-          { name: "Solar Panels", img: "https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto/Mega-Menu-Energy-Solar-Panels.png", href: "Solar-Panels" },
-          { name: "Solar Roof", img: "https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto/Mega-Menu-Energy-Solar-Roof.png", href: "Solar-Roof" },
+          { name: "Solar Panels", img: "https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto/Mega-Menu-Energy-Solar-Panels.png", href: "/Solar-Panels" },
+          { name: "Solar Roof", img: "https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto/Mega-Menu-Energy-Solar-Roof.png", href: "/Solar-Roof" },
         ],
       },
     ],
@@ -44,9 +44,9 @@ const navItems = [
       {
         category: "Charging",
         items: [
-          { name: "Supercharger", img: "image/Supercharging.avif", href: "Supercharger" },
-          { name: "Home Charging", img: "https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto/Mega-Menu-Charging-Home-Charging.png", href: "Home-Charging" },
-          { name: "Adapters", img: "image/adopter.avif", href: "Charging-Adapter" },
+          { name: "Supercharger", img: "image/Supercharging.avif", href: "/Supercharger" },
+          { name: "Home Charging", img: "https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto/Mega-Menu-Charging-Home-Charging.png", href: "/Home-Charging" },
+          { name: "Adapters", img: "image/adopter.avif", href: "/Charging-Adapter" },
         ],
       },
     ],
@@ -57,15 +57,15 @@ const navItems = [
       {
         category: "Discover",
         items: [
-          { name: "Test Drive", img: "shop/discover.avif", href: "Test-Drive" },
-          { name: "Find Us", img: "shop/discover1.avif", href: "Find-Us" },
-          { name: "Events", img: "shop/discover2.avif", href: "Events" },
-          { name: "Support", img: "shop/discover3.avif", href: "Support" },
+          { name: "Test Drive", img: "shop/discover.avif", href: "/Test-Drive" },
+          { name: "Find Us", img: "shop/discover1.avif", href: "/Find-Us" },
+          { name: "Events", img: "shop/discover2.avif", href: "/Events" },
+          { name: "Support", img: "shop/discover3.avif", href: "/Support" },
         ],
       },
     ],
   },
-  { label: "Shop", href: "#" },
+  { label: "Shop", href: "/shop" },
 ];
 
 export default function Navbar() {
@@ -155,7 +155,7 @@ export default function Navbar() {
                 style={{ position: "relative" }}
               >
                 <a
-                  href={item.href || "#"}
+                  href={item.href || ""}
                   style={{
                     display: "flex",
                     alignItems: "center",
@@ -210,7 +210,7 @@ export default function Navbar() {
               </svg>
             </button>
             <a
-              href="#"
+              href="{product.href}"
               style={{
                 padding: "6px 16px",
                 fontSize: "13px",
@@ -362,7 +362,7 @@ export default function Navbar() {
                         </span>
                         <div style={{ display: "flex", gap: "8px", flexWrap: "wrap", justifyContent: "center" }}>
                           <a
-                            href="#"
+                            href={product.href}
                             style={{
                               fontSize: "11px",
                               color: "#393c41",
@@ -373,7 +373,7 @@ export default function Navbar() {
                             Learn
                           </a>
                           <a
-                            href="#"
+                            href={product.href}
                             style={{
                               fontSize: "11px",
                               color: "#393c41",
